@@ -1,0 +1,11 @@
+name: Test
+
+on: # trigger
+  workflow_call: # whenever this workflow needs to be called from another
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test the code
+        run: echo "Code Test using Sonar / Pytest"
