@@ -1,0 +1,11 @@
+name: Deploy
+
+on: # trigger
+  workflow_call: # whenever this workflow needs to be called from another
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy the code
+        run: echo "Code Deployed to AWS EC2 instance"
