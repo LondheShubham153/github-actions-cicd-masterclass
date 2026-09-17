@@ -1,0 +1,11 @@
+name: Build
+
+on: # trigger
+  workflow_call: # whenever this workflow needs to be called from another
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build the code
+        run: echo "Code built using Docker"
